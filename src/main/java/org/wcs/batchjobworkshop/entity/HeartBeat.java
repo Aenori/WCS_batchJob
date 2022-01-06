@@ -15,6 +15,17 @@ public class HeartBeat {
     private LocalDate createdAt;
     private String source;
 
+    public HeartBeat(){}
+    public HeartBeat(LocalDate createdAt, String source) {
+        this.createdAt = createdAt;
+        this.source = source;
+    }
+    public HeartBeat(Integer id, LocalDate createdAt, String source) {
+        this.id = id;
+        this.createdAt = createdAt;
+        this.source = source;
+    }
+
     public Integer getId() {
         return id;
     }
